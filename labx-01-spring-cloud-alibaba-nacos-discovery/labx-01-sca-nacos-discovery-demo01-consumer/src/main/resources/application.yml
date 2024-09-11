@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: demo01-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 120.55.87.225:8848
+server:
+  port: 28080
