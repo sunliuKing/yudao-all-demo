@@ -1,18 +1,15 @@
-package com.yudaodemo.labx01scanacosdiscoverydemo01provider;
+package com.yudaodemo.labx01scanacosdiscoverydemo02provider;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-@EnableDiscoveryClient //开启注册中心
-public class Demo01ProviderApplication {
+public class Demo02ProviderApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Demo01ProviderApplication.class, args);
+        SpringApplication.run(Demo02ProviderApplication.class, args);
     }
 
     @RestController

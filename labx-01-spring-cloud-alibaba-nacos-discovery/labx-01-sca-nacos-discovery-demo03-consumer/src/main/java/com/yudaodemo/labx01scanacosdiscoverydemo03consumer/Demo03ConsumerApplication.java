@@ -1,4 +1,4 @@
-package com.yudaodemo.labx01scanacosdiscoverydemo01consumer;
+package com.yudaodemo.labx01scanacosdiscoverydemo03consumer;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -15,11 +15,12 @@ import org.springframework.web.client.RestTemplate;
 import java.util.List;
 
 @SpringBootApplication
-public class Demo01ConsumerApplication {
+public class Demo03ConsumerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Demo01ConsumerApplication.class, args);
+        SpringApplication.run(Demo03ConsumerApplication.class, args);
     }
+
 
     @Configuration
     public class RestTemplateConfiguration {
@@ -47,7 +48,7 @@ public class Demo01ConsumerApplication {
                 // 获取服务 `demo-provider` 对应的实例列表
                 List<ServiceInstance> instances = discoveryClient.getInstances("demo01-provider");
                 // 选择第一个
-                instance = instances.size() > 0 ? instances.get(0) : null;
+                instance = !instances.isEmpty() ? instances.get(0) : null;
             } else {
                 instance = loadBalancerClient.choose("demo-provider");
             }

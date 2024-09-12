@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 120.55.87.225:8848
+        namespace: 90939fe9-4b0d-4f98-888e-5e441eb62511
+        cluster-name: ${spring.application.name}
