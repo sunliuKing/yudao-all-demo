@@ -13,7 +13,8 @@
 
 	<modules>
 <!--		<module>labx-01-spring-cloud-alibaba-nacos-discovery</module>-->
-		<module>labx-05-spring-cloud-alibaba-nacos-config</module>
-        <module>pay-demo</module>
-    </modules>
+<!--		<module>labx-05-spring-cloud-alibaba-nacos-config</module>-->
+<!--        <module>pay-demo</module>-->
+		<module>labx-08-spring-cloud-gateway</module>
+	</modules>
 </project>
