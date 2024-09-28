@@ -16,6 +16,7 @@
 <!--		<module>labx-05-spring-cloud-alibaba-nacos-config</module>-->
 <!--        <module>pay-demo</module>-->
 <!--		<module>labx-08-spring-cloud-gateway</module>-->
-		<module>labx-03-spring-cloud-feign</module>
+<!--		<module>labx-03-spring-cloud-feign</module>-->
+		<module>lab-68-spring-security-oauth</module>
 	</modules>
 </project>

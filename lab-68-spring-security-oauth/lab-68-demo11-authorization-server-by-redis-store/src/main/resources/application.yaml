@@ -1,0 +1,10 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: resource-owner
+  redis:
+    password: sl123
+    host: 120.55.87.225
+    port: 6389
+    database: 1
